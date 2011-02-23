@@ -1,0 +1,108 @@
+﻿* 
+{
+    margin: 0;
+    padding: 0;
+}
+
+body
+{
+    font-family: Verdana, Tahoma, Arial, "Helvetica Neue", Helvetica, Sans-Serif;
+    color: #232323;
+    background-color: #fff;
+    font-size:12px;
+}
+
+a 
+{
+    color: #0060FF !important;
+    text-decoration: none;
+}
+
+a:hover 
+{
+    color: #0060FF;
+    text-decoration: underline;
+}
+
+a:visited 
+{
+    color: #0060FF;
+    text-decoration: none;
+}
+
+.clear 
+{
+    clear:both;
+    float:none;
+}
+
+/* Layout
+-----------------------------------------------------------*/
+#container 
+{
+    margin: 0 auto;
+    width:960px;
+    overflow:hidden;
+	padding-bottom:0;
+}
+
+#header
+{
+    background:#bbb;
+}
+
+#header .content, #footer .content
+{
+    margin:0 1em;
+    margin-top:0;
+    padding:1em 0;
+}
+
+#loginbox 
+{
+    font-size:medium;
+    float:right;
+    margin: 5px 10px 0px 10px;
+}
+   
+#primary, #secondary 
+{
+    float:left;
+    position:relative;
+    margin-bottom:-32767px;
+	padding-bottom:32767px;
+}   
+    
+#secondary
+{   
+    color:white;
+    background-color:#CCC;
+    left:0px;
+    width:200px;
+    margin-left:-960px;
+}
+
+#primary
+{   
+    width:760px;
+    margin-left:200px;
+}
+
+#secondary .content
+{
+    margin: 1em;
+}
+
+#primary .content
+{
+    margin:1em 1em;
+}
+    
+#footer
+{
+    width:100%;
+    clear:both;
+    float:left;
+    background:#999;
+    position:relative;
+}

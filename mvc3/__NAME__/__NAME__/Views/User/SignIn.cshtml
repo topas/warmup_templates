@@ -1,0 +1,31 @@
+﻿@model __NAME__.Models.SignInUser
+
+@{
+    ViewBag.Title = "SignIn";
+    Layout = "~/Views/Shared/_Layout.cshtml";
+}
+
+
+
+<h2>Sign In</h2>
+
+@Html.Partial("SignUpBox")
+
+<br />
+<div id="loginform">
+@using (Html.BeginForm())
+{
+    <fieldset>
+    @Html.ValidationSummary(true)
+    <br />
+    <div>@Html.LabelFor(a=>a.Email) @Html.EditorFor(a=>a.Email) @Html.ValidationMessageFor(a=>a.Email)</div>
+    <br />
+    <div>@Html.LabelFor(a=>a.Password) @Html.EditorFor(a => a.Password) @Html.ValidationMessageFor(a => a.Password)</div>
+    <br />
+    <div>@Html.LabelFor(a=>a.RememberMe) @Html.EditorFor(a => a.RememberMe) @Html.ValidationMessageFor(a => a.RememberMe)</div>
+
+    <br /><br />
+    <button type="submit">Sign In</button>
+    </fieldset>
+}
+</div>
