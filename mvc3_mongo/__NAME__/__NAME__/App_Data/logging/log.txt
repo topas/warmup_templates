@@ -1,0 +1,14 @@
+2011-03-05 18:51:46,855 ERROR LOG: Error in SignUp
+Norm.MongoException: This collection does not accept insertions/updates, this is due to the fact that the collection's type __NAME__.Models.User does not specify an identifier property
+   at Norm.Collections.MongoCollection`1.AssertUpdatable() in G:\Development\Code\OpenSource\NoRM\NoRM\Collections\MongoCollectionGeneric.cs:line 544
+   at Norm.Collections.MongoCollection`1.Save(T entity) in G:\Development\Code\OpenSource\NoRM\NoRM\Collections\MongoCollectionGeneric.cs:line 105
+   at __NAME__.Services.Repositories.BaseRepository`1.Save(TModel obj) in I:\CSharp\Templates\mvc3_mongo\__NAME__\__NAME__.Services\Repositories\BaseRepository.cs:line 70
+   at __NAME__.Controllers.UserController.SignUp(SignUpUser model) in I:\CSharp\Templates\mvc3_mongo\__NAME__\__NAME__\Controllers\UserController.cs:line 154
+---
+2011-03-05 18:52:37,466 ERROR LOG: Error in SignUp
+Norm.MongoException: This collection does not accept insertions/updates, this is due to the fact that the collection's type __NAME__.Models.User does not specify an identifier property
+   at Norm.Collections.MongoCollection`1.AssertUpdatable() in G:\Development\Code\OpenSource\NoRM\NoRM\Collections\MongoCollectionGeneric.cs:line 544
+   at Norm.Collections.MongoCollection`1.Save(T entity) in G:\Development\Code\OpenSource\NoRM\NoRM\Collections\MongoCollectionGeneric.cs:line 105
+   at __NAME__.Services.Repositories.BaseRepository`1.Save(TModel obj) in I:\CSharp\Templates\mvc3_mongo\__NAME__\__NAME__.Services\Repositories\BaseRepository.cs:line 70
+   at __NAME__.Controllers.UserController.SignUp(SignUpUser model) in I:\CSharp\Templates\mvc3_mongo\__NAME__\__NAME__\Controllers\UserController.cs:line 154
+---

@@ -1,0 +1,8 @@
+﻿
+@if (!this.User.Identity.IsAuthenticated)
+{
+<div id="signup">
+Create new account! 
+@Html.ActionLink("Sign Up", "SignUp", "User")
+</div>
+}
