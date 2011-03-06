@@ -39,6 +39,7 @@
       <HintPath>..\packages\NoRM.0.9.8\lib\Norm.dll</HintPath>
     </Reference>
     <Reference Include="System" />
+    <Reference Include="System.configuration" />
     <Reference Include="System.Core" />
     <Reference Include="System.Data.Entity" />
     <Reference Include="System.Web" />
@@ -55,6 +56,7 @@
     <Compile Include="Services\AuthentificationService.cs" />
     <Compile Include="Services\FormsAuthenticationService.cs" />
     <Compile Include="Services\Log.cs" />
+    <Compile Include="Services\PlainTextPasswordHashProvider.cs" />
     <Compile Include="Services\ShaPasswordHashProvider.cs" />
     <Compile Include="Storage\DatabaseContext.cs" />
   </ItemGroup>

@@ -36,6 +36,12 @@ namespace __NAME__.Services.Services
                 password = String.Empty;
             }
 
+            // add some salt from .config
+            if (!String.IsNullOrWhiteSpace(System.Configuration.ConfigurationManager.AppSettings["PasswordSalt"]))
+            {
+                password = String.Format("{0}-{1}", System.Configuration.ConfigurationManager.AppSettings["PasswordSalt"], password);
+            }
+
             byte[] buffer = this.Encoding.GetBytes(password);
             using (SHA1CryptoServiceProvider cryptoTransformSHA1 = new SHA1CryptoServiceProvider())
             {
